@@ -36,9 +36,9 @@ jobs:
             # Test if website exists
             if curl -s --head ${URL} 
             then
-              return 0
-            else
               return 1
+            else
+              return 0
             fi
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
